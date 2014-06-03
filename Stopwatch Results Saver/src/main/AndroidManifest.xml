@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="incredible.stopwatchresultssaver.stopwatchresultssaver" >
+
+    <application
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="incredible.stopwatchresultssaver.stopwatchresultssaver.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="incredible.stopwatchresultssaver.stopwatchresultssaver.SettingsActivityTimer"
+            android:label="@string/settings_text_timer"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="incredible.stopwatchresultssaver.stopwatchresultssaver.SettingsActivityStopwatch"
+            android:label="@string/settings_text_stopwatch"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="incredible.stopwatchresultssaver.stopwatchresultssaver.BrowseResults"
+            android:label="@string/title_activity_browse_results" >
+        </activity>
+    </application>
+
+</manifest>

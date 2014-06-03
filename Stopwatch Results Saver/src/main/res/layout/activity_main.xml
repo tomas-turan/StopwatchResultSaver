@@ -1,0 +1,179 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    android:background="#ffb1cbd1"
+    tools:context="incredible.stopwatchresultssaver.stopwatchresultssaver.MainActivity"
+    >
+
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#494652"
+        android:weightSum="3">
+
+
+        <Button
+            android:id="@+id/button_stopwatch"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/button_stopwatch"
+            android:textSize="15sp"
+            android:textColor="#606356"
+            android:onClick="stopwatch_button"
+            android:drawableTop="@drawable/stopwatch_icon"
+            style="?android:attr/borderlessButtonStyle"
+        />
+
+        <Button
+            android:id="@+id/button_timer"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/button_timer"
+            android:textSize="15sp"
+            android:textColor="#606356"
+            android:onClick="timer_button"
+            android:drawableTop="@drawable/timer_icon"
+            style="?android:attr/borderlessButtonStyle"
+        />
+
+        <Button
+            android:id="@+id/button_results"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/button_results"
+            android:textSize="15sp"
+            android:textColor="#606356"
+            android:onClick="results_button"
+            android:drawableTop="@drawable/save_icon"
+            style="?android:attr/borderlessButtonStyle"
+        />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView android:id="@+id/stopwatch_large_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="45dp"
+            android:textAlignment="center"
+
+        />
+
+        <TextView android:id="@+id/stopwatch_small_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="00"
+            android:textSize="30dp"
+
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView android:id="@+id/setting1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_text"
+            android:textColor="#ff625b5b" />
+
+        <TextView android:id="@+id/setting2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_text"
+            android:textColor="#ff625b5b" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+
+        android:layout_marginTop="20dp">
+
+        <Button android:id="@+id/button_set"
+            android:text="@string/button_set_text"
+            android:onClick="set_reset"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:paddingLeft="0dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_reset"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+
+            />
+
+
+        <Button android:id="@+id/button_start"
+            android:text="@string/button_start_text_start"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:onClick="start_split"
+
+            android:background="@drawable/button_start"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+    </LinearLayout>
+
+    <ListView
+
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/times_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/Widget.AppCompat.Light.Base.Spinner"
+        android:drawSelectorOnTop="true"
+        android:stackFromBottom="false"
+        android:smoothScrollbar="true"
+        android:textAlignment="center"
+        android:background="#C7CCB6"/>
+
+
+ </LinearLayout>

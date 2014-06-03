@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Stopwatch Results Saver/Stopwatch Results Saver.iml" filepath="$PROJECT_DIR$/Stopwatch Results Saver/Stopwatch Results Saver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StopwatchResultSaver.iml" filepath="$PROJECT_DIR$/StopwatchResultSaver.iml" />
+    </modules>
+  </component>
+</project>
+
